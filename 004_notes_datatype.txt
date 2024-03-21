@@ -1,0 +1,14 @@
+
+ 1- Primtives dataypes
+datatypes- string , int ,, boolean , undefined null, symbol and Bigpoint
+
+2- refreence and non-primitives datatypes
+Array , object , functions,  
+ datatype of function is function
+
+ 3- How memory works in javascript.
+ primitive datatype uses stack memoryu 
+ ** when we assisgn a value to variable of other varibale , then copy is assign to tyhe varibale 
+ Non-primitive datatypes uses heap memories.
+ here reffrence is assigne to the varibale.
+ back tics are important in which we can assig any value in ${var1}

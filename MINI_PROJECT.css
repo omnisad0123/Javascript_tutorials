@@ -1,0 +1,81 @@
+.container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  h1, p {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .blue-heart {
+    background-color: blue;
+  }
+  
+  .blue-heart::before,
+  .blue-heart::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: blue;
+  }
+  
+  .blue-heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  .blue-heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+  
+  .blue-heart::before,
+  .blue-heart::after {
+    animation-name: balloon-burst;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes balloon-burst {
+    0% {
+      top: 0;
+      opacity: 1;
+    }
+    100% {
+      top: -100px;
+      opacity: 0;
+    }
+  }
+  
+  .blue-heart p {
+    margin: 10px 0;
+  }
+  
+  .blue-heart p::after {
+    content: ' 🎈';
+    animation-name: balloon-floating;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes balloon-floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
