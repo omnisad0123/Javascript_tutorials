@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bcg" style="background-color: #414144;
+  ">
+    <div style="
+      background-color: rgb(17, 29, 39);
+      text-align: center;
+     width: auto;
+     ">
+    <h1  style="font-size: larger; color: blanchedalmond ; border: #414144;
+    ">COULOR CHANGER</h1>  <br></br>
+    <div>
+   <button id="start">Start</button>  <br></br>
+   <button id="stop">Stop</button>
+</div>
+</div>
+   <script>
+//    const chngtxt=document.querySelector('h1');
+//     function changeText(){
+        
+          
+//           chngtxt.innerHTML="Text has been changed"
+//           console.log("text changes")
+//     }
+//    const changeme=setTimeout(changeText,5000)
+//    const stoptxt=document.querySelector('#stop')
+//    stoptxt.addEventListener( 'click' ,function(){
+//         console.log("stopped")
+//        clearTimeout(changeme);
+//    })
+  const start = document.querySelector("#start")
+  const stop = document.querySelector("#stop")
+  let back=document.querySelector('#bcg')
+  let settieme;
+  start.addEventListener('click', function(){
+      console.log("color change started")
+      settieme= setInterval(function(){
+    var r = Math.floor(Math.random() * 256); // Random integer between 0 and 255
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+
+    // Construct the RGB color string
+    var rndcolor = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+    document.body.style.backgroundColor = rndcolor;
+       },2000)
+  })
+  stop.addEventListener('click', function(){
+    
+       clearInterval(settieme);
+       console.log("color changing stopped")
+  })
+   </script>
+</body>
+</html>

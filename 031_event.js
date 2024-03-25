@@ -23,3 +23,16 @@
 // const button = document.getElementById("myButton");
 
 
+const signup=document.querySelector('.signup-form')
+
+function submitform(e){
+    e.preventDefault()
+    signup.remove();
+    console.log("clicked on submit button");  
+}
+function GotoGoogle(e){
+    e.preventDefault();
+    window.location.href = 'https://www.google.com';
+}
+
+signup.addEventListener('click',GotoGoogle);

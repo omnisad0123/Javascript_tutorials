@@ -1,0 +1,54 @@
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px; /* Add some padding to the body */
+}
+
+/* Style for the container div */
+div {
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 600px; /* Limit the maximum width of the container */
+    text-align: center; /* Center-align the content inside the container */
+}
+
+/* Style for the heading */
+h1 {
+    color: #333; /* Dark gray text color */
+}
+
+/* Style for the buttons */
+.button {
+    display: inline-block; /* Display buttons inline */
+    padding: 10px 20px; /* Add padding to the buttons */
+    margin: 5px; /* Add margin around the buttons */
+    background-color: #ccc; /* Light gray button background */
+    color: #333; /* Dark gray button text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add rounded corners to the buttons */
+}
+#grey {
+    background-color: grey;
+    color: white;
+}
+
+#blue {
+    background-color: blue;
+    color: white;
+}
+
+#yellow {
+    background-color: yellow;
+    color: black;
+}
+
+#pink {
+    background-color: pink;
+    color: black;
+}
+
+/* Style for the buttons on hover */
+.button:hover {
+    background-color: #999; /* Dark gray background on hover */
+    color: #fff; /* White text color on hover */
+}
