@@ -1,0 +1,1 @@
+Welcome to our JavaScript tutorials repository! This repository contains a series of tutorials aimed at helping beginners learn JavaScript from scratch. Whether you're new to programming or have some experience with other languages, these tutorials will provide you with a solid foundation in JavaScript.
